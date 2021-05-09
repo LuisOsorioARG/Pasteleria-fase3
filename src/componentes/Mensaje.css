@@ -1,0 +1,8 @@
+.Mensaje {
+
+}
+
+.Mensaje .jumbotron {
+    background-color: blueviolet;
+    color: white;
+}

@@ -1,0 +1,26 @@
+.Item {
+
+}
+
+.Item .jumbotron {
+    background-color: brown;
+    color: white;
+
+}
+
+.div {
+    padding: 0%;
+}
+
+.Item .row {
+    background-color: darkgray;
+    color:darkslateblue;
+    width:5%;
+} 
+
+.col-4 {
+    background-color: darkgray;
+    color:darkslateblue;
+    width:10px;
+} 
+
