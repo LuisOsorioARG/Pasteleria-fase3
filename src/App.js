@@ -10,7 +10,7 @@ import { Navbar } from './componentes/Navbar';
 import { Rutanovalida } from './componentes/Rutanovalida';
 
 
-const numbers = [1, 2, 3, 4, 5];
+
 
 function MostrarDatosHijo(props) {
   let { id, contador, contador2, total } = props.datos
@@ -23,12 +23,45 @@ function MostrarDatosHijo(props) {
   }
 }
 
+//esto lo saque desde el sitio oficial de raec
+const numbers = [1, 2, 3, 4, 5];
+
+function NumberList(props) {
+  const numbers = props.numbers;
+  const listItems = numbers.map((number) =>
+    <li>{number}</li>
+  );
+  return (
+    <ul>{listItems}</ul>
+  );
+}
+
+function NumberList2(props) {
+  const numbers = props.numbers;
+  const listItems = numbers.map((number) =>
+    <Item id={number}
+    nombreItem="Galletitas" 
+    valor={number}
+    precio="100" 
+    fondo="orange"
+    enviarContadorAlPadre={datos => this.recibirDatosItem(datos)}/>
+  );
+  return (
+    <div>{listItems}</div>
+  );
+}
+
+
+
 /* function App() { */
 class App extends React.Component {
+
+ 
 
   constructor() {
     super()
     console.log(`App Constructor`)
+    let users = ['lucho','luis'];
 
     //this.recibirDatosHijo = this.recibirDatosHijo.bind(this)
   }
@@ -68,6 +101,9 @@ class App extends React.Component {
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio numquam, eaque error aliquam unde praesentium at dignissimos neque saepe eos molestias perspiciatis earum dolorem consectetur vero modi, voluptas possimus repellat.
             </p>
+
+
+          <button> Agregar Item</button>
 
             <hr/>
             <hr/>
@@ -156,6 +192,10 @@ class App extends React.Component {
             {/* ---------------------------------------------- */}
             {/*   Render condicional: Dentro de un componente  */}
             {/* ---------------------------------------------- */}
+
+
+
+
             <MostrarDatosHijo datos={this.state.datos} />
 
             <Item id="4" 
@@ -174,6 +214,10 @@ class App extends React.Component {
               enviarContadorAlPadre={datos => this.recibirDatosItem(datos)}
               />
 
+
+<NumberList numbers={numbers}/>
+
+<NumberList2 numbers={numbers}/>
 
           </div>
         </div>
