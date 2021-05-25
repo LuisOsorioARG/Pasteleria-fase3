@@ -5,6 +5,10 @@ import Mensaje from './componentes/Mensaje';
 import Item from './componentes/Item';
 
 /* imports de router */
+/* imports de router */
+/* imports de router */
+/* imports de router */
+/* imports de router */
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { Navbar } from './componentes/Navbar';
 import { Rutanovalida } from './componentes/Rutanovalida';
