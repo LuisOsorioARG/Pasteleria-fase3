@@ -38,13 +38,15 @@ function NumberList(props) {
 
 function NumberList2(props) {
   const numbers = props.numbers;
+  const data2 = { id:'33434', valor:505};
   const listItems = numbers.map((number) =>
     <Item id={number}
     nombreItem="Galletitas" 
     valor={number}
     precio="100" 
     fondo="orange"
-    enviarContadorAlPadre={datos => this.recibirDatosItem(datos)}/>
+    //enviarContadorAlPadre={datos => this.recibirDatosItem(datos)}/>
+    enviarContadorAlPadre={data2}/>
   );
   return (
     <div>{listItems}</div>
