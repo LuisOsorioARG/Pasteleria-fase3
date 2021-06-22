@@ -3,6 +3,7 @@ import './App.css';
 import Contador from './componentes/Contador';
 import Mensaje from './componentes/Mensaje';
 import Item from './componentes/Item';
+import Precios from './componentes/Precios';
 
 /* imports de router */
 /* imports de router */
@@ -105,7 +106,7 @@ class App extends React.Component {
             <h1>Mi Proyecto React</h1>
             <hr/>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio numquam, eaque error aliquam unde praesentium at dignissimos neque saepe eos molestias perspiciatis earum dolorem consectetur vero modi, voluptas possimus repellat.
+ESTA ES LA RAMA DEVELP
             </p>
 
 
@@ -159,7 +160,7 @@ class App extends React.Component {
                 {/* Componentes ruteados */}
                 <Route path="/mensaje1/:msj/:fondo" component={Mensaje} />
                 <Route path="/mensaje2/:msj/:fondo" component={Mensaje} />
-                <Route path="/mensaje3/:msj/:fondo" component={Mensaje} />
+                <Route path="/mensaje3/:msj/:fondo" component={Precios} />
 
                 {/* Componente para ruta no definida */}
                 <Route component={Rutanovalida} />
@@ -220,6 +221,7 @@ class App extends React.Component {
               enviarContadorAlPadre={datos => this.recibirDatosItem(datos)}
               />
 
+<Mensaje msj="Mensaje Nro 1" fondo="green"/>
 
 <NumberList numbers={numbers}/>
 

@@ -9,8 +9,8 @@ function Mensaje(props) {
     /* let msj = props.msj
     let fondo = props.fondo */
     
-    //let { msj, fondo } = props //destructuring object (parámetros ruteado por props)
-    let { msj, fondo } = props.match.params //destructuring object (parámetros ruteado por ruta)
+    let { msj, fondo } = props //destructuring object (parámetros ruteado por props)
+    //let { msj, fondo } = props.match.params //destructuring object (parámetros ruteado por ruta)
 
     return (
         <div className="Mensaje">
